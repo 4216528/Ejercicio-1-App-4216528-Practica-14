@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="Ejercicio1.MainPage">
+
+    <ScrollView>
+
+        <!-- Creamos un VerticalstackLayout y definimos su margen con la propiedad margin -->
+
+        <VerticalStackLayout Margin="50,50,50,50">
+
+            <!-- Adjuntamos nuestra imagen y definimos su ancho y su alto con las propiedades correspondientes -->
+
+            <Image Source="Numeros.png"
+                   
+                WidthRequest="300"   
+                   
+                HeightRequest="300"/>
+
+            <!-- Agregamos dos label con sus propiedades correspondientes -->
+
+            <Label FontSize="30" HorizontalOptions="Center" Padding="10,10,10,10" Text="Bienvenid@"/>
+
+            <Label FontSize="15" HorizontalOptions="Center" Padding="10,10,10,10" Text="Ingrese los numeros en los recuadros"/>
+
+            <!-- Creamos 4 Entry para ingresar los numeros -->
+
+            <Entry Margin="10,10,10,10" Placeholder="Número 1" x:Name="Numero1" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Número 2" x:Name="Numero2" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Número 3" x:Name="Numero3" />
+
+            <Entry Margin="10,10,10,10" Placeholder="Número 4" x:Name="Numero4" />
+
+            <!-- Agregamos un button con su evento click -->
+
+            <Button Margin="10,10,10,10" Text="Invertir" Clicked="OnCounterClicked"/>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+</ContentPage>
